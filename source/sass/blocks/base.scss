@@ -1,0 +1,74 @@
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  font-family: $font-primary;
+  font-size: 11px;
+  line-height: 16px;
+  font-weight: 400;
+  background-color: $bg-primary;
+  color: $color-base;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+ main {
+    display: block;
+  }
+  
+  /**
+   * Correct the font size and margin on `h1` elements within `section` and
+   * `article` contexts in Chrome, Firefox, and Safari.
+   */
+  h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+  }
+
+  img {
+    border-style: none;
+
+  }
+
+
+  /* Forms
+     ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+ fieldset {
+    padding: 0.35em 0.75em 0.625em;
+  }
+
+  /**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+    overflow: auto;
+  }
