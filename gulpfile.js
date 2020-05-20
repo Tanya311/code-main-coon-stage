@@ -14,7 +14,7 @@ gulp.task("css", function () {
 });
 
 gulp.task("html", function () {
-    return gulp.src("source/*.html")
+    return gulp.src("source/index.html")
       .pipe(gulp.dest("build"))
 })
 
@@ -54,5 +54,4 @@ gulp.task("clean", function () {
 
 gulp.task("build", gulp.series("copy", "css", "html"))
 gulp.task("start", gulp.series("build", "server"));
-
 
