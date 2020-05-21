@@ -21,7 +21,7 @@
           <p class="header__city">Новосибирск</p>
           <h1 class="header__title">Питомник Мейн-Кунов</h1>
           <p class="header__lead">Первый питомник с расширенным спектром услуг</p>
-          <a href="#" class="header__btn">Смотреть котиков</a>
+          <a href="#" class="button button--header">Смотреть котиков</a>
         </div>
         <ul class="social header__social">
           <li class="header__social-item">
@@ -45,23 +45,45 @@
   </header>
   <main class="main__title">
     <section class="pets">
-      <h2 class="pets__title">Питомцы</h2>
-      <p class="pets__description">Все представители нашего питомника имеют ветеринарный паспорт с отметками о прививках и документ с родословной</p>
-      <ul class="pets__list">
-        <li class="pets__item">
-          <a href="">Коты</a>
-        </li>
-        <li class="pets__item">
-          <a href="">Кошки</a>
-        </li>
-        <li class="pets__item">
-          <a href="">Котята</a>
-        </li>
-      </ul>
-      <img class="pets__img" src="img/cat1.jpg" alt="Фото кота1">
-      <img class="pets__img" src="img/cat2.jpg" alt="Фото кота2">
-      <img class="pets__img" src="img/cat3.jpg" alt="Фото кота3">
-      <a class="button" href="#">Смотреть больше</a>
+      <div class="pets__wrapper">
+        <h2 class="pets__title">Питомцы</h2>
+        <p class="pets__description">Все представители нашего питомника имеют ветеринарный паспорт с отметками о прививках и документ с родословной</p>
+        <ul class="pets__list">
+          <li class="pets__item">
+            <a class="pets__item-link pets__item-link--active"  href="">Коты</a>
+          </li>
+          <li class="pets__item">
+            <a class="pets__item-link" href="">Кошки</a>
+          </li>
+          <li class="pets__item">
+            <a class="pets__item-link" href="">Котята</a>
+          </li>
+        </ul>
+        <div class="pets__photos-wrapper">
+          <svg class="pets__button-left" width="8px" height="18px" tabindex="0"><use xlink:href="img/sprite.svg#icon-arrow-left"></use></svg>
+          <div class="pets__img-wrapper">
+            <picture>
+              <source media="(min-width: 768px)"
+                srcset="img/cat1@tablet.jpg">
+              <img class="pets__img pets__img--1" src="img/cat1.jpg" alt="Фото кота1">
+            </picture>
+          </div>
+          <div class="pets__other-photos-wrapper">
+            <picture class="pets__img pets__img--2">
+              <source media="(min-width: 1300px)"
+                srcset="img/cat2@decstop.jpg">
+              <img src="img/cat2.jpg" alt="Фото кота2">
+            </picture>
+            <picture class="pets__img pets__img--3">
+              <source media="(min-width: 1300px)"
+                srcset="img/cat3@decstop.jpg">
+              <img src="img/cat3.jpg" alt="Фото кота3">
+            </picture>
+          </div>
+          <svg class="pets__button-right" width="8px" height="18px" tabindex="0"><use xlink:href="img/sprite.svg#icon-arrow-right"></use></svg>
+        </div>
+        <a class="button button--pets" href="#">Смотреть больше</a>
+      </div>
     </section>
     <section class="features">
       <h2 class="features__title">Особенности породы</h2>
@@ -73,6 +95,7 @@
         <li class="features__item">Вес может достигать 12 кг, а длина 1 м</li>
         <li class="features__item">Внешний вид этой кошки похож на дикую рысь</li>
       </ul>
+      </div>
     </section>
     <section class="advantage">
       <h2 class="advantage__title">Почему именно мы?</h2>

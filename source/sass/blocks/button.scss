@@ -1,0 +1,26 @@
+.button {
+  display: inline-block;
+  padding: 15px 18px;
+
+  font-weight: bold;
+
+  border: 1px solid #A07B50;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    color: #A07B50;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .button {
+    padding: 18.34px 35px 17.33px;
+
+    font-size: 14px;
+  }
+}
