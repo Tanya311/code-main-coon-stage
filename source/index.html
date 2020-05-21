@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Питомник Мейн Кунов</title>
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
@@ -24,19 +24,19 @@
           <a href="#" class="header__btn">Смотреть котиков</a>
         </div>
         <ul class="social header__social">
-          <li class="social__item">
-            <a href="#" class="social__link">
-              ВКонтакте
+          <li class="header__social-item">
+            <a href="#" class="social__link" aria-label="ВКонтакте">
+              <svg  width="13px" height="8.15px"><use xlink:href="img/sprite.svg#icon-vk"></use></svg>
             </a>
           </li>
-          <li class="social__item">
-            <a href="#" class="social__link">
-              Твиттер
+          <li class="header__social-item">
+            <a href="#" class="social__link" aria-label="Твиттер">
+              <svg  width="15.08px" height="10.59px"><use xlink:href="img/sprite.svg#icon-twitter"></use></svg>
             </a>
           </li>
-          <li class="social__item">
-            <a href="#" class="social__link">
-              Фейсбук
+          <li class="header__social-item">
+            <a href="#" class="social__link" aria-label="Фейсбук">
+              <svg  width="5.08px" height="11.1px"><use xlink:href="img/sprite.svg#icon-facebook"></use></svg>
             </a>
           </li>
         </ul>
@@ -119,13 +119,19 @@
           </p>
           <ul class="team-employee__social">
             <li class="team-employee__social-item">
-              <a class="team-employee__social-link" href="">Facebook</a>
+              <a class="team-employee__social-link" href="" aria-label="Фейсбук">
+                <svg  width="40px" height="40px"><use xlink:href="img/sprite.svg#icon-facebook"></use></svg>
+              </a>
             </li>
             <li class="team-employee__social-item">
-              <a class="team-employee__social-link" href="">Twitter</a>
+              <a class="team-employee__social-link" href="" aria-label="Твиттер">
+                <svg  width="40px" height="40px"><use xlink:href="img/sprite.svg#icon-twitter"></use></svg>
+              </a>
             </li>
             <li class="team-employee__social-item">
-              <a class="team-employee__social-link" href="">VK</a>
+              <a class="team-employee__social-link" href="" aria-label="ВКонтакте">
+                <svg  width="40px" height="40px"><use xlink:href="img/sprite.svg#icon-vk"></use></svg>
+              </a>
             </li>
           </ul>
         </li>
@@ -173,10 +179,14 @@
           <span class="review-card__date">24 мая 2018</span>
           <ul class="review-card__social">
             <li class="review-card__social-item">
-              <a class="review-card__social-link" href="">Twitter</a>
+              <a class="review-card__social-link" href="" aria-label="Твиттер">
+                <svg  width="40px" height="40px"><use xlink:href="img/sprite.svg#icon-twitter"></use></svg>
+              </a>
             </li>
             <li class="review-card__social-item">
-              <a class="review-card__social-link" href="">VK</a>
+              <a class="review-card__social-link" href="" aria-label="ВКонтакте">
+                <svg  width="40px" height="40px"><use xlink:href="img/sprite.svg#icon-vk"></use></svg>
+              </a>
             </li>
           </ul>
         </li>
@@ -185,23 +195,31 @@
   </main>
 
   <footer class="footer">
-    <div class="footer__contacts">
-      <p class="footer__adress">Новосибирск, Пушкинский проспект, 19</p>
-      <a class="footer__tel" href="tel:+73839006465">+7 (383) 900-64-65</a>
-    </div>
-    <ul class="footer__social">
-      <li class="footer__social-item">
-        <a class="footer__social-link" href="">Facebook</a>
-      </li>
-      <li class="footer__social-item">
-        <a class="footer__social-link" href="">Twitter</a>
-      </li>
-      <li class="footer__social-item">
-        <a class="footer__social-link" href="">VK</a>
-      </li>
-    </ul>
-    <div>
-      <img class="footer__logo" src="img/logo.svg" alt="Логотип питомника Мейн-Кунов">
+    <div class="footer__wrapper">
+      <div class="footer__contacts">
+        <p class="footer__adress">Новосибирск, Пушкинский проспект, 19</p>
+        <a class="footer__tel" href="tel:+73839006465">+7 (383) 900-64-65</a>
+      </div>
+      <ul class="social footer__social">
+        <li class="footer__social-item footer__social-item--fb">
+          <a class="footer__social-link" href="" aria-label="Фейсбук">
+            <svg width="5.08px" height="11.1px"><use xlink:href="img/sprite.svg#icon-facebook"></use></svg>
+          </a>
+        </li>
+        <li class="footer__social-item footer__social-item--tw">
+          <a class="footer__social-link" href="" aria-label="Твиттер">
+            <svg width="15.1px" height="10.6px"><use xlink:href="img/sprite.svg#icon-twitter"></use></svg>
+          </a>
+        </li>
+        <li class="footer__social-item footer__social-item--vk">
+          <a class="footer__social-link" href="" aria-label="ВКонтакте">
+            <svg width="13px" height="8.15px"><use xlink:href="img/sprite.svg#icon-vk"></use></svg>
+          </a>
+        </li>
+      </ul>
+      <div class="footer__logo-wrapper">
+        <img class="footer__logo" src="img/logo.svg" alt="Логотип питомника Мейн-Кунов">
+      </div>
     </div>
   </footer>
 </body>

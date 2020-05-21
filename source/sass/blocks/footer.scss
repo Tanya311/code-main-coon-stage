@@ -1,0 +1,143 @@
+.footer{
+  @include width-block(auto);
+  text-align: center;
+}
+
+.footer__wrapper {
+  @include width-block(320px);
+  padding: 40px 28px;
+}
+
+.footer__adress,
+.footer__tel {
+  font-size: 14px;
+  color: #D6CCC2;
+}
+
+.footer__tel {
+  color: #FDF2E6;
+}
+
+.footer__social {
+  @include width-block(260px);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.footer__social-link svg {
+  fill: #A07B50;
+}
+
+.footer__social-item {
+  &:not(:first-child) {
+    margin-left: 20px;
+    margin-bottom: 10px;
+  }
+
+  &--fb svg {
+    width: 7px;
+    height: 16px;
+  }
+
+
+  &--tw svg {
+    width: 22px;
+    height: 16px;   
+  }
+
+  &--vk svg {
+    width: 25px;
+    height: 14px; 
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .footer{
+    @include width-block(auto);
+    text-align: center;
+  }
+      
+  .footer__wrapper {
+    @include width-block(768px);
+    padding: 40px 47px 40px 54px;
+    display: flex;
+  }
+
+  .footer__logo {
+    display: none;
+  }
+
+  .footer__contacts {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer__social {
+    justify-content: flex-start;
+    align-items: center;
+    order: -1;
+
+    width: 180px;
+    margin: 0 32px 0 0;
+  }
+      
+  .footer__social-item {
+    &:not(:first-child) {
+      margin-left: 8px;
+      margin-bottom: 0;
+    }
+        
+    &--fb svg {
+      width: 7px;
+      height: 16px;
+    }
+    
+    &--tw svg {
+      width: 20px;
+      height: 14px;   
+    }
+    
+    &--vk svg {
+      width: 21px;
+      height: 12px; 
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer__wrapper {
+    @include width-block(1200px);
+    padding: 0 143px 0 158px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer__logo-wrapper {
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer__logo {
+    display: block;
+    order: 0;
+  }
+  
+  .footer__contacts {
+    flex-grow: 1;
+    order: 2;
+  }
+  
+  .footer__social {
+    order: 1;
+
+    width: 180px;
+    margin: 0 32px 0 95px;
+  }
+}
+  
