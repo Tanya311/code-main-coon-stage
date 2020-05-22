@@ -1,0 +1,229 @@
+.features {
+  @include width-block(auto);
+  text-align: center;
+  background-color: $bg-secondary;
+}
+
+.features__wrapper {
+  @include width-block(320px);
+  padding: 30px 15px 30px;
+}
+
+.features__title {
+  font-family: $font-secondary;
+  font-size: 28px;
+  line-height: 32px;
+  margin: 0;
+}
+
+.features__description {
+  margin: 35px 0 30px;
+  font-weight: 300;
+  font-size: 14px;
+  color: $color-secondary;
+}
+
+.features__img-wrapper {
+  @include width-block(290px);
+  margin-bottom: 30px;
+  height: 307px;
+  background: url("../img/ellipse.png") no-repeat, url("../img/ellipse.svg") no-repeat;
+  background-position: 20px 50px, 0px 25px;
+}
+
+.features__list {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 0;
+  text-align: left;
+}
+
+.features__item {
+  padding: 0 20px 0 18px;
+  margin-bottom: 30px;
+  font-weight: 300;
+  font-size: 14px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #a07b50;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .features__wrapper {
+    @include width-block(768px);
+    padding: 51px 43px 74.8px;
+    position: relative;
+  }
+  
+  .features__title {
+    font-size: 36px;
+  }
+  
+  .features__description {
+    width: 453px;
+    margin: 23.44px auto 89px;
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .features__img {
+    margin-top: -80px;
+    margin-left: 30px;
+  }
+  
+  .features__img-wrapper {
+    @include width-block(416px);
+    margin-bottom: 30px;
+    height: 450px;
+    background: url("../img/ellipse@tablet.png") no-repeat, url("../img/ellipse.svg") no-repeat;
+    background-position: 33px 60px, 0 25px;
+    background-size: auto, 416px 424px;
+  }
+  
+  .features__list {
+    text-align: left;
+  }
+  
+  .features__item {
+    padding: 0 22px 0 0;
+    margin-bottom: 0;
+    position: absolute;
+    z-index: 10;
+
+    &::before {
+      width: 9.88px;
+      height: 10.07px;
+    }
+
+    &--cohabitation {
+      width: 167px;
+      top: 380px;
+      left: 27px;
+      text-align: right;
+
+      &::before {
+        top: 5px;
+        left: auto; 
+        right: 0;
+      }
+    }
+
+    &--instruction {
+      padding-left: 23px;
+      width: 130px;
+      top: 455px;
+      left: 581px;
+    }
+
+    &--weight {
+      padding-left: 23px;
+      width: 98px;
+      top: 591px;
+      left: 567px;
+    }
+    
+    &--appearance {
+      width: 145px;
+      top: 549px;
+      left: 20px;
+      text-align: right;
+
+      &::before {
+        top: 5px;
+        left: auto; 
+        right: 0;
+      }
+    }
+  }
+}
+ 
+@media (min-width: $desktop-width) {
+  .features__wrapper {
+    @include width-block(1200px);
+    padding: 43px 40px 40px 38px;
+  }
+
+  .features__description {
+    width: 735px;
+    margin: 23px auto 69px;
+    font-size: 16px;
+  }
+  
+  .features__img {
+    margin-top: -133px;
+    margin-left: 30px;
+  }
+      
+      .features__img-wrapper {
+        @include width-block(640px);
+          margin-bottom: 30px;
+          height: 640px;
+          background: url("../img/ellipse@tablet.png") no-repeat, url("../img/ellipse.svg") no-repeat;
+          background-position: 58px 62px, 0 0;
+          background-size: 519px 519px, 631px 631px;
+      }
+
+      .features__item {
+        padding: 0 33px 0 0;
+        margin-bottom: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 10;
+
+        &::before {
+            width: 15px;
+            height: 15px;
+        }
+    
+        &--cohabitation {
+            width: 236px;
+            top: 357px;
+            left: 64px;
+    
+          &::before {
+            top: 5px;
+            left: auto; 
+            right: 0;
+          }
+        }
+    
+        &--instruction {
+            padding-left: 34px;
+            width: 160px;
+            top: 472px;
+            left: 899px;
+    
+        }
+    
+        &--weight {
+            padding-left: 34px;
+            width: 138px;
+            top: 677px;
+            left: 862px;
+          }
+        
+        &--appearance {
+              
+            width: 176px;
+            top: 647px;
+            left: 105px;
+    
+          &::before {
+            top: 5px;
+            left: auto; 
+            right: 0;
+          }
+        }
+      }
+  
+}
