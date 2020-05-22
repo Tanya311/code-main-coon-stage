@@ -93,16 +93,16 @@
   overflow: hidden;
   box-shadow: 0px 0px 30px rgba(3, 3, 3, 0.15);
   margin-bottom: 45px;
+
+  &--2, &--3 {
+    display: none;
+  }
 }
 
 .pets__img {
     margin-top: -31px;
     margin-left: -30px;
     border: none; 
-  &--2,
-  &--3 {
-    display: none;
-  }
 }
 
 @media (min-width: $tablet-width) {
@@ -135,6 +135,7 @@
       
   .pets__photos-wrapper {
     position: relative;
+    min-height: 540px;
   }
     
   .pets__button-left,
@@ -153,6 +154,7 @@
   }
 
   .pets__button-left {
+    order: 1;
     &:hover,
     &:focus {
       margin-left: -2px;
@@ -160,42 +162,51 @@
   }
       
   .pets__button-right {
+    order: 5;
     &:hover,
     &:focus {
       margin-right: -2px;
     }
   }
-      
-  .pets__img-wrapper {
-    @include width-block(530px);
-    height: 514px;
+
+  .pets__img-wrapper{
     box-shadow: none;
-    margin-bottom: 45px;
-  }
-      
-  .pets__img {
     &--1 {
-    position: absolute;
-    margin: -31px auto 0;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 10;
+      @include width-block(530px);
+      height: 514px;
+      margin-bottom: 45px;
+      order: 3;
+      left: 50%;
+      top: 0px;
+      transform: translateX(-50%);
+      position: absolute;
     }
 
     &--2,
     &--3 {
-      display: inline-block;
-      position: absolute;
-      height: 197px;
-      top: 200px;
+      height: 200px;
     }
 
     &--2 {
-      left: 50px;
+      width: 417.95px;
+      order: 2;
+      margin-left: 10px;
     }
     
     &--3 {
+      width: 470px;
       right: 18px;
+      order: 4;
+      margin-right: 10px;
+      margin-left: -342px;
+    }
+  }
+
+  .pets__img {
+    &--2,
+    &--3 {
+      display: inline-block;
+      margin: 0;
     }
   }
 }
@@ -208,14 +219,16 @@
 
   .pets__photos-wrapper {
     padding-left: 76px;
+    flex-direction: column;
     align-items: flex-start;
+    flex-wrap: wrap;
+    height: 503px;
   }
 
   .pets__other-photos-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    order: 0;
   }
     
   .pets__button-left,
@@ -226,32 +239,34 @@
   .pets__img-wrapper {
     height: 494px;
     margin-bottom: 45px;
-    order: 2;
-  }
-      
-  .pets__img {
+
     &--1 {
       position: static;
-      margin: -50px 0 0 0;
       left: auto;
       transform: none;
+      order: 5;
     }
 
     &--2,
     &--3 {
-      height: 221px;
-      display: inline-block;
-      position: static;
+      width: 519px;
+      height: 234px;
       margin: 0;
     }
 
     &--2 {
       order: 2;
-      margin-top: 30px;
+      margin-top: 24px;
     }
     
     &--3 {
         order: 1;
+    }
+  }
+      
+  .pets__img {
+    &--1 {
+      margin: -50px 0 0 0;
     }
   }
 }
