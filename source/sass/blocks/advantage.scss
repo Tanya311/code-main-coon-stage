@@ -1,0 +1,144 @@
+.advantage {
+  @include width-block(auto);
+  text-align: center;
+}
+
+.advantage__wrapper {
+  @include width-block(320px);
+  padding: 60px 15px 60px;
+}
+
+.advantage__title {
+  @include width-block(200px);
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-family: $font-secondary;
+  font-size: 28px;
+  line-height: 32px;
+}
+
+.advantage__description {
+  margin: 35px 0 30px;
+
+  font-weight: 300;
+  font-size: 14px;
+  color: $color-secondary;
+}
+
+.advantage__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.advantage__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  width: 290px;
+  height: 248px;
+  margin: 0 auto 30px;
+  padding: 10px 47px 34px;
+  box-sizing: border-box;
+
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.4;
+
+  background-color: $bg-secondary;
+  background-repeat: no-repeat;
+  background-position: 50% 40px;
+  position: relative;
+
+  &--veterinary {
+    padding: 10px 43px 10px;
+
+    background-color: #A07B50;
+    background-image: url("../img/veterinary.svg");
+    border: 15px solid $bg-secondary;
+  }
+
+  &--consultation {
+    background-image: url("../img/consultation.svg");
+  }
+
+  &--feed {
+    background-image: url("../img/feed.svg");
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .advantage__wrapper {
+    @include width-block(768px);
+    padding: 85px 43px 101px;
+  }
+  
+  .advantage__title {
+    width: auto;
+    font-size: 36px;
+  }
+
+  .advantage__description {
+    margin: 23.44px 0 58px;
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .advantage__item {
+    width: 360px;
+    height: 306.77px;
+    margin-bottom: 42.8px;
+    padding: 10px 55px 34px;
+  
+    font-size: 16px;
+    line-height: 26px;
+  
+    &--veterinary {
+      padding: 10px 43px 10px;
+      background-size: 97.79px 109.79px;
+      border: 20px solid $bg-secondary;
+    }
+  
+    &--consultation {
+      background-size: 107px 96.88px;
+    }
+  
+    &--feed {
+      background-size: 70.15px 110.07px;
+    }
+  }
+}
+ 
+@media (min-width: $desktop-width) {
+  .advantage__wrapper {
+    @include width-block(1200px);
+    padding: 83px 40px 99px 38px;
+  }
+
+  .advantage__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+ 
+  .advantage__item {
+    height: 301px;
+    margin-bottom: 10px;
+    padding: 10px 55px 34px;
+    
+    &--veterinary {
+      background-size: 97.79px 107px;
+    }
+  
+    &--consultation {
+      background-size: 107px 95.06px;
+      margin: 0 20px;
+    }
+  
+    &--feed {
+      background-size: 70.15px 108px;
+    }
+  } 
+}
