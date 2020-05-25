@@ -1,0 +1,185 @@
+.team {
+  @include width-block(320px);
+  padding: 60px 20px;
+  text-align: center;
+  line-height: 1.4;
+  position: relative;
+}
+
+.team__title {
+  margin: 0;
+
+  font-family: $font-secondary;
+  font-size: 28px;
+  line-height: 1.3;
+}
+
+.team__description {
+  width: 254px;
+  margin: 35px auto 103px;
+
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.4;
+  color: $color-secondary;
+}
+
+.team__button {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 282px;
+  
+  &--right {
+    right: 58px;
+  }
+
+  &--left {
+    left: 58px;
+  }
+}
+
+.team__button  svg {
+  stroke: #A07B50;
+  fill: none;
+}
+
+.team__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+@media (min-width: $tablet-width) {
+  .header {
+    min-height: 595px;
+    padding-top: 28.5px;
+  
+    text-align: left;
+  
+    background: url("../img/cat-promo@tablet.png") no-repeat;
+    background-position: 100% 100%;
+  }
+  
+  .header__container {
+    @include width-block(768px);
+    padding: 0 43px;
+  }
+
+  .header__wrapper {
+    width: 400px;
+  }
+  
+  .header__logo {
+    text-align: center;
+  }
+  
+  .header__city {
+    font-size: 16px;
+  }
+  
+  .header__title {
+    font-size: 52px;
+  }
+  
+  .header__lead {
+    width: 250px;
+
+    font-size: 16px;
+  }
+  
+  .header__btn {
+    padding: 18.34px 35px 17.33px;
+
+    font-size: 14px;
+  }
+
+  .header__social {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+  }
+
+  .header__social {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+  }
+
+  .header__social-item {
+    &:not(:first-child) {
+      margin-left: 11px;
+    }
+
+    &:hover,
+    &:focus {
+      outline: none;
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  .header__social-item svg {
+    fill: #ffffff;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header {
+    min-height: 710px;
+    padding-top: 28.5px;
+  
+    background: url("../img/cat-promo@decstop.png") no-repeat;
+    background-position: 100% 100%;
+  }
+  
+  .header__container {
+    @include width-block(1200px);
+    padding: 0 40px 0 38px;
+  }
+
+  .header__wrapper {
+    width: auto;
+  }
+  
+  .header__content {
+    width: 400px;
+    padding-left: 150px;
+  }
+
+  .header__logo {
+    margin-bottom: 96px;
+  }
+  
+  .header__lead {
+    width: 300px;
+  }
+
+  .header__social {
+    flex-direction: column;
+    margin-top: 60px;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 0px;
+      height: 77.5px;
+      left: 8px;
+      top: -102px;
+      border: 0.5px solid rgba(255, 255, 255, 0.5);
+    }
+  }
+
+  .header__social-item {
+    &:not(:first-child) {
+      margin-left: 0px;
+      margin-top: 15px;
+    }
+  }
+}

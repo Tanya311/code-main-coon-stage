@@ -1,0 +1,58 @@
+.team-employee {
+    padding: 88px 11px 16px;
+    background-color: $bg-secondary;
+    position: relative;
+  }
+  
+  .team-employee__photo {
+    position: absolute;
+    top: -70px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .team-employee__name {
+    margin: 0;
+  
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: $color-secondary;
+  }
+  
+  .team-employee__position {
+    margin-top: 8px;
+    margin-bottom: 25px;
+  
+    font-size: 14px;
+    color: $color-secondary;
+  }
+  
+  .team-employee__text {
+    margin-bottom: 30px;
+  
+    font-weight: 300;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.72);
+  }
+  
+  .team-employee__social {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .team-employee__social-link {
+    display: block;
+    margin-bottom: 5px;
+  
+    &:nth-child(n+1) {
+      margin-right: 15px;
+      margin-left: 15px;
+    }
+  }
+  
+  .team-employee__social-link svg {
+    fill: #ffffff;
+  }
+  
