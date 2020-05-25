@@ -14,7 +14,6 @@
   background-size: cover;
 }
 
-
 .cat-caring__title {
   margin: 0 auto 40px;
   padding: 0 10px;
@@ -78,38 +77,108 @@
   }
 }
 
-
 @media (min-width: $tablet-width) {
-  .header {
-    min-height: 595px;
-    padding-top: 28.5px;
-  
-    text-align: left;
-  
-    background: url("../img/cat-promo@tablet.png") no-repeat;
-    background-position: 100% 100%;
+  .cat-caring {
+    @include width-block(auto);
+    min-height: 966px;
   }
   
-  .header__container {
+  .cat-caring__container {
     @include width-block(768px);
-    padding: 0 43px;
+    padding: 89.69px 15px 76.44px;
+    background: url("../img/backgroung-cat@tablet.png") no-repeat;
   }
+  
+  .cat-caring__title {
+    margin: 0 auto 37.71px;
+    font-size: 36px;
+  }
+  
+  .cat-caring__item {
+    justify-content: space-between;
+    width: 558.56px;;
+    min-height: 168.16px;
+    margin: 0 auto 23.44px;
+    padding: 0 0 0 49px;
+  }
+  
+  .cat-caring__inner {
+    width: 420.9px;
+    padding: 38.73px 0 0 0;
+  }
+  
+  .cat-caring__item-title {
+    margin: 0;
 
+    font-size: 22px;
+  }
+  
+  .cat-caring__item-description {
+    margin: 20px 0 0 0;
+  }
+  
+  .cat-caring__link {
+    width: 59px;
+  }
 }
 
 @media (min-width: $desktop-width) {
-  .header {
-    min-height: 710px;
-    padding-top: 28.5px;
-  
-    background: url("../img/cat-promo@decstop.png") no-repeat;
-    background-position: 100% 100%;
+  .cat-caring {
+    @include width-block(auto);
+    min-height: 645px;
+    background: url("../img/backgroung-cat@decstop.png") no-repeat;
+    background-position: 50% 0;
+    background-size: auto auto;
   }
   
-  .header__container {
+  .cat-caring__container {
     @include width-block(1200px);
-    padding: 0 40px 0 38px;
+    padding: 89.69px 15px 33.44px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-image: none;
+  }
+  
+  .cat-caring__title {
+    margin: 0 auto 37.71px;
+    width: 100%;
+    font-size: 36px;
+  }
+  
+  .cat-caring__item {
+    justify-content: space-between;
+    width: 558.56px;;
+    box-sizing: border-box;
+    margin: 0 0 43px;
+    padding: 0 0 0 59px;
+
+
+    &--wool {
+      order: 0;
+      margin-right: 41.89px;
+    }
+
+    &--ears-eyes {
+      order: 3;
+    }
+
+    &--claw {
+      order: 2;
+    }
+
+    &--food {
+      order: 4;
+      margin-left: 41.89px;
+    }
+  }
+  
+  .cat-caring__inner {
+    width: 420px;
+    padding: 38px 0 0 0;
   }
 
- 
+  .cat-caring__item-description {
+    margin: 20px 0 0 0;
+  }
 }
