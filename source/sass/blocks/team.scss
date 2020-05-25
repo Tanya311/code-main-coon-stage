@@ -50,136 +50,78 @@
   padding: 0;
 }
 
-
-
 @media (min-width: $tablet-width) {
-  .header {
-    min-height: 595px;
-    padding-top: 28.5px;
-  
-    text-align: left;
-  
-    background: url("../img/cat-promo@tablet.png") no-repeat;
-    background-position: 100% 100%;
-  }
-  
-  .header__container {
+  .team {
     @include width-block(768px);
-    padding: 0 43px;
-  }
-
-  .header__wrapper {
-    width: 400px;
+    padding: 84.59px 43px 193.73px;
   }
   
-  .header__logo {
-    text-align: center;
+  .team__title {
+    font-size: 36px;
   }
   
-  .header__city {
+  .team__description {
+    width: 510px;
+    margin: 23.44px auto 23.32px;
+  
     font-size: 16px;
   }
   
-  .header__title {
-    font-size: 52px;
-  }
+  .team__button {
+    width: 12px;
+    height: 29.56px;
+    top: auto;
+    bottom: 98px;
+    
+    &--right {
+      right: 58px;
+    }
   
-  .header__lead {
-    width: 250px;
-
-    font-size: 16px;
-  }
-  
-  .header__btn {
-    padding: 18.34px 35px 17.33px;
-
-    font-size: 14px;
-  }
-
-  .header__social {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 60px;
-  }
-
-  .header__social {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 60px;
-  }
-
-  .header__social-item {
-    &:not(:first-child) {
-      margin-left: 11px;
-    }
-
-    &:hover,
-    &:focus {
-      outline: none;
-      opacity: 0.6;
-    }
-
-    &:active {
-      opacity: 0.3;
+    &--left {
+      left: auto;
+      right: 368px;
     }
   }
 
-  .header__social-item svg {
-    fill: #ffffff;
+  .team__button svg {
+    width: 12px;
+    height: 29.56px;
+  }
+
+  .team__list {
+    border: 1px solid rgba(160, 123, 80, 0.43);
+    padding: 23.56px 24px 23.35px 25px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .header {
-    min-height: 710px;
-    padding-top: 28.5px;
-  
-    background: url("../img/cat-promo@decstop.png") no-repeat;
-    background-position: 100% 100%;
-  }
-  
-  .header__container {
+  .team {
     @include width-block(1200px);
-    padding: 0 40px 0 38px;
-  }
-
-  .header__wrapper {
-    width: auto;
+    padding: 83px 40px 72px;
   }
   
-  .header__content {
-    width: 400px;
-    padding-left: 150px;
-  }
-
-  .header__logo {
-    margin-bottom: 96px;
+  .team__description {
+    margin: 23px auto 22px;
   }
   
-  .header__lead {
-    width: 300px;
-  }
-
-  .header__social {
-    flex-direction: column;
-    margin-top: 60px;
-    position: relative;
-
-    &::before {
-      content: '';
-      position: absolute;
-      width: 0px;
-      height: 77.5px;
-      left: 8px;
-      top: -102px;
-      border: 0.5px solid rgba(255, 255, 255, 0.5);
+  .team__button {
+    top: auto;
+    bottom: 274px;
+    
+    &--right {
+      right: 0px;
+    }
+  
+    &--left {
+      left: 0px;
+      right: auto;
     }
   }
 
-  .header__social-item {
-    &:not(:first-child) {
-      margin-left: 0px;
-      margin-top: 15px;
-    }
+  .team__list {
+    width: 650px;
+    box-sizing: border-box;
+    margin-left: 400px;
+    padding: 23px 24px 23px 26px;
   }
 }

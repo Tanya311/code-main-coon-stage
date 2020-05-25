@@ -165,20 +165,26 @@
       <p class="team__description">Все сотрудники нашего питомника  дипломированые специалисты в&nbsp;области фелинологии и ветеринарии</p>
       <ul class="team__list">
         <li class="team__card team-employee">
-          <img class="team-employee__photo" src="img/man-photo.png" alt="Фотография сотрудника">
+          <picture class="pets__img pets__img--2">
+            <source media="(min-width: 1300px)"
+              srcset="img/man-photo@decstop.png">
+            <source media="(min-width: 768px)"
+              srcset="img/man-photo@tablet.png">
+            <img class="team-employee__photo" src="img/man-photo.png" alt="Фотография сотрудника">
+          </picture>
           <h3 class="team-employee__name">Серёжа Попов</h3>
           <h4 class="team-employee__position">Основатель питомника</h4>
           <p class="team-employee__text">
             Наш питомник занимается разведением Мейн-Кунов на протяжениие 15 лет. Мы в ответе за каждого приобретенного вами питомца
           </p>
           <div class="team-employee__social">
-            <a class="team-employee__social-link" href="" aria-label="Фейсбук">
+            <a class="team-employee__social-link team-employee__social-link--fb" href="" aria-label="Фейсбук">
               <svg  width="5px" height="12px"><use xlink:href="img/sprite.svg#icon-facebook"></use></svg>
             </a>
-            <a class="team-employee__social-link" href="" aria-label="Твиттер">
+            <a class="team-employee__social-link team-employee__social-link--tw" href="" aria-label="Твиттер">
               <svg  width="16px" height="12px"><use xlink:href="img/sprite.svg#icon-twitter"></use></svg>
             </a>
-            <a class="team-employee__social-link" href="" aria-label="ВКонтакте">
+            <a class="team-employee__social-link team-employee__social-link--vk" href="" aria-label="ВКонтакте">
               <svg  width="18px" height="10px"><use xlink:href="img/sprite.svg#icon-vk"></use></svg>
             </a>
           </div>
