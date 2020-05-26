@@ -198,34 +198,36 @@
       </button>
     </section>
     <section class="question-answer">
-      <h2 class="question-answer__title">Вопрос-Ответ</h2>
-      <p class="question-answer__text">Мы ответим на самые популярные ваши вопросы</p>
-      <ul class="question-answer__list">
-        <li class="question-answer__item">
-          <p class="question-answer__question">С какого возраста можно забирать котенка из питомника?</p>
-          <p class="question-answer__answer visually-hidden">Есть важная причина, почему котенка стоит забирать домой только после трех месяцев, — это вакцинация.
-            Первые прививки животному делают в возрасте 8 недель. Ревакцинация проводится через 3–4 недели.
-            То есть котенок, покидающий дом позднее 12 недель, максимально защищен от различных вирусов и инфекций.
-            Так что, чтобы в дома появился психически и физически здоровый котенок, игривый, жизнерадостный, самостоятельный 
-            и воспитанный, не спешите забирать его от кошки-мамы раньше трех месяцев.</p>
-          <button><span class="visually-hidden">Показать ответ</span></button>
-        </li>
-        <li class="question-answer__item">
-          <p class="question-answer__question">Как зарезервировать котенка?</p>
-          <p class="question-answer__answer visually-hidden"></p>
-          <button><span class="visually-hidden">Показать ответ</span></button>
-        </li>
-        <li class="question-answer__item">
-          <p class="question-answer__question">Можно ли купить кота, если я живу в другом городе?</p>
-          <p class="question-answer__answer visually-hidden"></p>
-          <button><span class="visually-hidden">Показать ответ</span></button>
-        </li>
-        <li class="question-answer__item">
-          <p class="question-answer__question">Как подготовить дом к приему нового питомца? </p>
-          <p class="question-answer__answer visually-hidden"></p>
-          <button><span class="visually-hidden">Показать ответ</span></button>
-        </li>
-      </ul>
+      <div class="question-answer__container">
+        <h2 class="question-answer__title">Вопрос-Ответ</h2>
+        <p class="question-answer__text">Мы ответим на самые популярные ваши вопросы</p>
+        <ol type="01" class="question-answer__list">
+          <li class="question-answer__item">
+            <p class="question-answer__question">С какого возраста можно забирать котенка из питомника?</p>
+            <button class="question-answer__button question-answer__button--open"><span class="visually-hidden">Показать ответ</span></button>
+            <p class="question-answer__answer">Есть важная причина, почему котенка стоит забирать домой только после трех месяцев, — это вакцинация.
+              Первые прививки животному делают в возрасте 8 недель. Ревакцинация проводится через 3–4 недели.
+              То есть котенок, покидающий дом позднее 12 недель, максимально защищен от различных вирусов и инфекций.
+              <br><br>Так что, чтобы в дома появился психически и физически здоровый котенок, игривый, жизнерадостный, самостоятельный 
+              и воспитанный, не спешите забирать его от кошки-мамы раньше трех месяцев.</p>
+          </li>
+          <li class="question-answer__item">
+            <p class="question-answer__question">Как зарезервировать котенка?</p>
+            <button class="question-answer__button question-answer__button--close"><span class="visually-hidden">Показать ответ</span></button>
+            <p class="question-answer__answer visually-hidden"></p>
+          </li>
+          <li class="question-answer__item">
+            <p class="question-answer__question">Можно ли купить кота, если я живу в другом городе?</p>
+            <button class="question-answer__button question-answer__button--close"><span class="visually-hidden">Показать ответ</span></button>
+            <p class="question-answer__answer visually-hidden"></p>
+          </li>
+          <li class="question-answer__item">
+            <p class="question-answer__question">Как подготовить дом к приему нового питомца? </p>
+            <button class="question-answer__button question-answer__button--close"><span class="visually-hidden">Показать ответ</span></button>
+            <p class="question-answer__answer visually-hidden"></p>
+          </li>
+        </ol>
+      </div>
     </section>
     <section class="reviews">
       <h2 class="reviews__title">Отзывы</h2>
