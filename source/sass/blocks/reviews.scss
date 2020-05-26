@@ -1,0 +1,167 @@
+.reviews {
+  @include width-block(auto);
+  text-align: center;
+  background-color: $bg-primary;
+  padding: 0;
+}
+  
+.reviews__container {
+  @include width-block(320px);
+  padding: 0 15px 60px;
+  position: relative;
+}
+
+.reviews__title {
+  margin-top: 0;
+  margin-bottom: 143px;
+
+  font-family: $font-secondary;
+  font-size: 28px;
+  line-height: 32px;
+}
+
+.reviews__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.reviews__button {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 165px;
+    
+  &--right {
+    right: 9px;
+  }
+  
+  &--left {
+    left: 9px;
+  }
+}
+  
+.reviews__button  svg {
+  stroke: $color-secondary;
+  fill: none;
+}
+
+.review-card {
+  padding: 118px 32px 40px;
+  background-color: $bg-primary;
+  position: relative;
+}
+
+.review-card__name {
+font-weight: 500;
+font-size: 18px;
+margin: 0;
+}
+
+.review-card__text {
+margin-top: 25px;
+margin-bottom: 25px;
+font-weight: 300;
+font-size: 14px;
+line-height: 1.4;
+
+color: rgba(255, 255, 255, 0.72);
+}
+
+.review-card__photo {
+    position: absolute;
+    top: -70px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+    
+
+.review-card__inner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.review-card__date {
+    
+font-size: 12px;
+line-height: 1.4;
+
+
+color: $color-secondary;
+
+}
+
+.review-card__social {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.review-card__social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 28px;
+    height: 28px;
+    margin-left: 15px;
+    border: 0.5px solid rgba(160, 123, 80, 0.27);
+    box-sizing: border-box;
+}
+
+.review-card__social-link svg {
+    fill: $color-secondary;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews__container {
+    @include width-block(768px);
+    padding: 0 87px 60px 103px;
+    position: relative;
+  }
+  
+  .reviews__title {
+    font-size: 36px;
+  }
+
+  .reviews__button {
+    top: 214px;
+    width: 59px;
+    height: 20px;
+      
+    &--right {
+      right: 141px;
+      background: url("../img/arrow-long-right.svg") no-repeat;
+    }
+    
+    &--left {
+      left: 141px;
+      background: url("../img/arrow-long-left.svg") no-repeat;
+    }
+  }
+    
+  .reviews__button  svg {
+    display: none;
+  }
+}
+ 
+@media (min-width: $desktop-width) {
+  .reviews__container {
+    @include width-block(1200px);
+    padding: 0 87px 400px 83px;
+    position: relative;
+  }
+      
+  .reviews__title {
+    margin-bottom: 58px;
+  }
+    
+  .reviews__button {
+    background: none;
+  }
+        
+  .reviews__list {
+    margin-left: 414px;
+  }
+}

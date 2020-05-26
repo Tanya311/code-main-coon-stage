@@ -1,6 +1,7 @@
 .footer{
   @include width-block(auto);
   text-align: center;
+  background-color: $bg-secondary;
 }
 
 .footer__wrapper {
@@ -111,9 +112,16 @@
 }
 
 @media (min-width: $desktop-width) {
+
+  .footer{
+    @include width-block(auto);
+    text-align: center;
+    position: relative;
+    bottom: 300px;
+  }
   .footer__wrapper {
     @include width-block(1200px);
-    padding: 0 143px 0 158px;
+    padding: 68px 143px 67px 158px;
     display: flex;
     justify-content: space-between;
   }

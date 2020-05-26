@@ -1,8 +1,13 @@
 .team {
-  @include width-block(320px);
-  padding: 60px 20px;
+  @include width-block(auto);
   text-align: center;
   line-height: 1.4;
+  background-color: $bg-secondary;
+}
+
+.team__container {
+  @include width-block(320px);
+  padding: 60px 20px;
   position: relative;
 }
 
@@ -51,7 +56,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .team {
+  .team__container {
     @include width-block(768px);
     padding: 84.59px 43px 193.73px;
   }
@@ -95,7 +100,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .team {
+  .team__container {
     @include width-block(1200px);
     padding: 83px 40px 72px;
   }

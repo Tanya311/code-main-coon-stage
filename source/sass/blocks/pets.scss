@@ -1,7 +1,6 @@
 .pets {
   @include width-block(auto);
   text-align: center;
-  background-color: $bg-secondary;
 }
 
 .pets__wrapper {

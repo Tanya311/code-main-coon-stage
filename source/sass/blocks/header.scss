@@ -5,8 +5,9 @@
 
   text-align: center;
   line-height: 1.4;
-
-  background: url("../img/cat-promo.png") no-repeat;
+  background-color: $bg-secondary;
+  background-image: url("../img/cat-promo.png");
+  background-repeat: no-repeat;
   background-position: 100% 100%;
 }
 
@@ -46,7 +47,7 @@
   
     text-align: left;
   
-    background: url("../img/cat-promo@tablet.png") no-repeat;
+    background-image: url("../img/cat-promo@tablet.png");
     background-position: 100% 100%;
   }
   
@@ -121,7 +122,7 @@
     min-height: 710px;
     padding-top: 28.5px;
   
-    background: url("../img/cat-promo@decstop.png") no-repeat;
+    background-image: url("../img/cat-promo@decstop.png");
     background-position: 100% 100%;
   }
   

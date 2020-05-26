@@ -4,12 +4,15 @@
 
   text-align: center;
   line-height: 1.4;
+
+  background-color: $bg-secondary;
 }
 
 .cat-caring__container {
   @include width-block(320px);
   padding: 60px 15px 30px;
-  background: url("../img/backgroung-cat.png") no-repeat;
+  background-image: url("../img/backgroung-cat.png");
+  background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: cover;
 }
@@ -86,7 +89,8 @@
   .cat-caring__container {
     @include width-block(768px);
     padding: 89.69px 15px 76.44px;
-    background: url("../img/backgroung-cat@tablet.png") no-repeat;
+    background-image: url("../img/backgroung-cat@tablet.png");
+    background-repeat: no-repeat;
   }
   
   .cat-caring__title {
@@ -126,7 +130,8 @@
   .cat-caring {
     @include width-block(auto);
     min-height: 645px;
-    background: url("../img/backgroung-cat@decstop.png") no-repeat;
+    background-image: url("../img/backgroung-cat@decstop.png");
+    background-repeat: no-repeat;
     background-position: 50% 0;
     background-size: auto auto;
   }
