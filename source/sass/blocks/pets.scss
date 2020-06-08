@@ -56,44 +56,42 @@
 }
 
 .pets__photos-wrapper {
-  display: flex;
-  align-items: center;
+  position: relative;
   margin-bottom: 1px;
 }
 
 .pets__button-left,
 .pets__button-right {
-    fill: #1F1C1D;
-  &:hover,
-  &:focus {
-    width: 10px;
-    height: 20px;
-    outline: none;
-  }
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
 
-  &:active {
-    opacity: 0.3;
-  }
+.pets__button-left  svg,
+.pets__button-right svg {
+  stroke: $color-secondary;
+  fill: none;
 }
 
 .pets__button-left {
-  &:hover,
-  &:focus {
-    margin-left: -2px;
-  }
+  left: -5px;
+
 }
 
 .pets__button-right {
-  &:hover,
-  &:focus {
-    margin-right: -2px;
-  }
+  right: -7px;
+
 }
 
 .pets__img-wrapper {
   @include width-block(234px);
   height: 247px;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
   box-shadow: 0px 0px 30px rgba(3, 3, 3, 0.15);
   margin-bottom: 45px;
 
@@ -103,9 +101,8 @@
 }
 
 .pets__img {
-    margin-top: -31px;
-    margin-left: -30px;
-    border: none;
+  width: 127%;
+  margin-left: -31px;
 }
 
 @media (min-width: $tablet-width) {
@@ -137,7 +134,8 @@
   }
 
   .pets__photos-wrapper {
-    position: relative;
+    display: flex;
+    align-items: center;
     min-height: 540px;
   }
 
@@ -145,34 +143,28 @@
   .pets__button-right {
     width: 12px;
     height: 29px;
-    left: 29px;
-    top: 1151.65px;
-    stroke-width: 2px;
+    top: 115.65px;
+  }
 
-    &:hover,
-    &:focus {
-      width: 14px;
-      height: 31px;
-    }
+  .pets__button-left svg,
+  .pets__button-right svg {
+    width: 12px;
+    height: 29px;
+    top: 115.65px;
+    stroke-width: 2px;
   }
 
   .pets__button-left {
     order: 1;
-    &:hover,
-    &:focus {
-      margin-left: -2px;
-    }
+    left: 29px;
   }
 
   .pets__button-right {
     order: 5;
-    &:hover,
-    &:focus {
-      margin-right: -2px;
-    }
+    right: 29px;
   }
 
-  .pets__img-wrapper{
+  .pets__img-wrapper {
     box-shadow: none;
     &--1 {
       @include width-block(530px);
