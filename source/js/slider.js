@@ -34,7 +34,7 @@ if(getWindowWidth() < 768)  {
 } else {
   petsButtonRight.addEventListener("click", function () {
     counter ++;
-    alert('1');
+
     if(counter > 3) {
       counter = 1;
     }
