@@ -6,16 +6,17 @@
 
 .footer__wrapper {
   @include width-block(320px);
-  padding: 40px 28px;
+  padding: 23px 28px;
 }
 
-.footer__adress,
-.footer__tel {
+.footer__adress {
+  margin: 12px 0;
   font-size: 14px;
   color: #D6CCC2;
 }
 
 .footer__tel {
+  font-size: 14px;
   color: #FDF2E6;
 }
 
@@ -25,8 +26,8 @@
   justify-content: center;
   flex-wrap: wrap;
 
-  margin-top: 25px;
-  margin-bottom: 15px;
+  margin-top: 20px;
+  margin-bottom: 12px;
 }
 
 .footer__social-link svg {
@@ -47,12 +48,12 @@
 
   &--tw svg {
     width: 22px;
-    height: 16px;   
+    height: 16px;
   }
 
   &--vk svg {
     width: 25px;
-    height: 14px; 
+    height: 14px;
   }
 }
 
@@ -61,7 +62,7 @@
     @include width-block(auto);
     text-align: center;
   }
-      
+
   .footer__wrapper {
     @include width-block(768px);
     padding: 40px 47px 40px 54px;
@@ -87,26 +88,26 @@
     width: 180px;
     margin: 0 32px 0 0;
   }
-      
+
   .footer__social-item {
     &:not(:first-child) {
       margin-left: 8px;
       margin-bottom: 0;
     }
-        
+
     &--fb svg {
       width: 7px;
       height: 16px;
     }
-    
+
     &--tw svg {
       width: 20px;
-      height: 14px;   
+      height: 14px;
     }
-    
+
     &--vk svg {
       width: 21px;
-      height: 12px; 
+      height: 12px;
     }
   }
 }
@@ -130,17 +131,17 @@
     display: flex;
     align-items: center;
   }
-  
+
   .footer__logo {
     display: block;
     order: 0;
   }
-  
+
   .footer__contacts {
     flex-grow: 1;
     order: 2;
   }
-  
+
   .footer__social {
     order: 1;
 
@@ -148,4 +149,4 @@
     margin: 0 32px 0 95px;
   }
 }
-  
+

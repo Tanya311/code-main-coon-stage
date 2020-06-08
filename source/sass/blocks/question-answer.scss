@@ -6,7 +6,7 @@
 
 .question-answer__container {
   @include width-block(320px);
-  padding: 60px 15px 30px;
+  padding: 55px 15px 22px;
 }
 
 .question-answer__title {
@@ -15,11 +15,12 @@
   font-family: $font-secondary;
   font-size: 28px;
   line-height: 32px;
+  font-weight: normal;
 }
 
 .question-answer__text {
   width: 177px;
-  margin: 35px auto 40px;
+  margin: 25px auto 35px;
 
   font-weight: 300;
   font-size: 14px;
@@ -48,7 +49,7 @@
 .question-answer__question {
   width: 237px;
   box-sizing: border-box;
-  padding: 15px 5px 15px 15px;
+  padding: 12px 0 10px 15px;
   margin: 0;
 
   font-weight: 500;
@@ -78,13 +79,17 @@
 
 .question-answer__answer {
   margin: 0;
-  padding: 15px 27px 15px 15px;
+  padding: 0px 9px 9px 13px;
 
   font-weight: 300;
   font-size: 14px;
-  line-height: 140%;
+  line-height: 1.42;
   color: #DDD0C3;
   border-top: 0.5px solid #544332;
+}
+
+.question-answer__answer p {
+  margin: 10px 0 0 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -92,18 +97,18 @@
     @include width-block(768px);
     padding: 136.9px 55px 30.44px 79px;
   }
-  
+
   .question-answer__title {
     font-size: 36px;
   }
-  
+
   .question-answer__text {
     width: auto;
     margin: 33px auto 58.03px;
-  
+
     font-size: 16px;
   }
-  
+
   .question-answer__list {
 	counter-reset: li;
 	margin: 0 0 0 60px;
@@ -112,10 +117,10 @@
 
   .question-answer__item {
     margin-bottom: 25.82px;
-    position: relative;	
-  
+    position: relative;
+
     &::before {
-      content: "0"counter(li); 
+      content: "0"counter(li);
       counter-increment: li;
       position: absolute;
       top: 50%;
@@ -127,21 +132,21 @@
       font-weight: bold;
     }
   }
-  
+
   .question-answer__question {
     width: 403px;
     padding: 21.97px 5px 30px 29.26px;
 
     font-size: 16px;
   }
-  
+
   .question-answer__button {
     width: 72.59px;
   }
-  
+
   .question-answer__answer {
     padding: 27.46px 140px 27px 29.26px;
-  
+
     font-size: 16px;
   }
 }
@@ -151,11 +156,11 @@
     @include width-block(1200px);
     padding: 73px 135px 30.44px 126px;
   }
-  
+
   .question-answer__text {
     margin: 25px auto 53.38px;
   }
-  
+
   .question-answer__list {
 	margin: 0 0 0 150px;
 	padding: 15px 0 5px 0;
@@ -163,24 +168,24 @@
 
   .question-answer__item {
     margin-bottom: 35px;
-  
+
     &::before {
       left: -120px;
       font-size: 70px;
     }
   }
-  
+
   .question-answer__question {
     width: 514px;
     padding: 46px 5px 45.43px 42.63px;
   }
-  
+
   .question-answer__button {
     width: 104px;
   }
-  
+
   .question-answer__answer {
     padding: 40px 200px 40px 42.63px;
   }
 }
-  
+

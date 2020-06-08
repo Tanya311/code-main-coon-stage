@@ -4,7 +4,7 @@
   background-color: $bg-primary;
   padding: 0;
 }
-  
+
 .reviews__container {
   @include width-block(320px);
   padding: 0 15px 60px;
@@ -13,11 +13,12 @@
 
 .reviews__title {
   margin-top: 0;
-  margin-bottom: 143px;
+  margin-bottom: 135px;
 
   font-family: $font-secondary;
   font-size: 28px;
   line-height: 32px;
+  font-weight: normal;
 }
 
 .reviews__list {
@@ -30,17 +31,17 @@
   background-color: transparent;
   border: none;
   position: absolute;
-  top: 165px;
-    
+  top: 157px;
+
   &--right {
     right: 9px;
   }
-  
+
   &--left {
     left: 9px;
   }
 }
-  
+
 .reviews__button  svg {
   stroke: $color-secondary;
   fill: none;
@@ -74,7 +75,7 @@ color: rgba(255, 255, 255, 0.72);
     left: 50%;
     transform: translateX(-50%);
   }
-    
+
 
 .review-card__inner {
     display: flex;
@@ -83,7 +84,7 @@ color: rgba(255, 255, 255, 0.72);
 }
 
 .review-card__date {
-    
+
 font-size: 12px;
 line-height: 1.4;
 
@@ -120,7 +121,7 @@ color: $color-secondary;
     padding: 0 87px 60px 103px;
     position: relative;
   }
-  
+
   .reviews__title {
     font-size: 36px;
   }
@@ -129,38 +130,38 @@ color: $color-secondary;
     top: 214px;
     width: 59px;
     height: 20px;
-      
+
     &--right {
       right: 141px;
       background: url("../img/arrow-long-right.svg") no-repeat;
     }
-    
+
     &--left {
       left: 141px;
       background: url("../img/arrow-long-left.svg") no-repeat;
     }
   }
-    
+
   .reviews__button  svg {
     display: none;
   }
 }
- 
+
 @media (min-width: $desktop-width) {
   .reviews__container {
     @include width-block(1200px);
     padding: 0 87px 400px 83px;
     position: relative;
   }
-      
+
   .reviews__title {
     margin-bottom: 58px;
   }
-    
+
   .reviews__button {
     background: none;
   }
-        
+
   .reviews__list {
     margin-left: 414px;
   }

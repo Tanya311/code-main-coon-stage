@@ -4,7 +4,7 @@ body {
   padding: 0;
   font-family: $font-primary;
   font-size: 11px;
-  line-height: 16px;
+  line-height: 1.42;
   font-weight: 400;
   line-height: 1.4;
   background-color: $bg-primary;
@@ -23,7 +23,7 @@ a {
  main {
     display: block;
   }
-  
+
   /**
    * Correct the font size and margin on `h1` elements within `section` and
    * `article` contexts in Chrome, Firefox, and Safari.

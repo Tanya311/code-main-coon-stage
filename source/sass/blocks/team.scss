@@ -7,7 +7,7 @@
 
 .team__container {
   @include width-block(320px);
-  padding: 60px 20px;
+  padding: 50px 15px 60px;
   position: relative;
 }
 
@@ -17,11 +17,12 @@
   font-family: $font-secondary;
   font-size: 28px;
   line-height: 1.3;
+  font-weight: normal;
 }
 
 .team__description {
   width: 254px;
-  margin: 35px auto 103px;
+  margin: 22px auto 100px;
 
   font-weight: 300;
   font-size: 14px;
@@ -33,14 +34,14 @@
   background-color: transparent;
   border: none;
   position: absolute;
-  top: 282px;
-  
+  top: 254px;
+
   &--right {
-    right: 58px;
+    right: 66px;
   }
 
   &--left {
-    left: 58px;
+    left: 68px;
   }
 }
 
@@ -60,28 +61,28 @@
     @include width-block(768px);
     padding: 84.59px 43px 193.73px;
   }
-  
+
   .team__title {
     font-size: 36px;
   }
-  
+
   .team__description {
     width: 510px;
     margin: 23.44px auto 23.32px;
-  
+
     font-size: 16px;
   }
-  
+
   .team__button {
     width: 12px;
     height: 29.56px;
     top: auto;
     bottom: 98px;
-    
+
     &--right {
       right: 58px;
     }
-  
+
     &--left {
       left: auto;
       right: 368px;
@@ -104,19 +105,19 @@
     @include width-block(1200px);
     padding: 83px 40px 72px;
   }
-  
+
   .team__description {
     margin: 23px auto 22px;
   }
-  
+
   .team__button {
     top: auto;
     bottom: 274px;
-    
+
     &--right {
       right: 0px;
     }
-  
+
     &--left {
       left: 0px;
       right: auto;

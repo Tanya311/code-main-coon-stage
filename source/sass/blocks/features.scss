@@ -5,7 +5,7 @@
 
 .features__wrapper {
   @include width-block(320px);
-  padding: 30px 15px 30px;
+  padding: 24px 15px 33px;
 }
 
 .features__title {
@@ -16,18 +16,24 @@
 }
 
 .features__description {
-  margin: 35px 0 30px;
+  margin: 24px 0 28px;
   font-weight: 300;
   font-size: 14px;
   color: $color-secondary;
 }
 
 .features__img-wrapper {
-  @include width-block(290px);
-  margin-bottom: 30px;
+  @include width-block(280px);
+
+  margin-bottom: 33px;
   height: 307px;
   background: url("../img/ellipse.png") no-repeat, url("../img/ellipse.svg") no-repeat;
   background-position: 20px 50px, 0px 25px;
+}
+
+.features__img {
+  display: block;
+  margin: -15px auto 0;
 }
 
 .features__list {
@@ -38,8 +44,8 @@
 }
 
 .features__item {
-  padding: 0 20px 0 18px;
-  margin-bottom: 30px;
+  padding: 0 18px 0 18px;
+  margin-bottom: 22px;
   font-weight: 300;
   font-size: 14px;
   position: relative;
@@ -62,11 +68,11 @@
     padding: 51px 43px 74.8px;
     position: relative;
   }
-  
+
   .features__title {
     font-size: 36px;
   }
-  
+
   .features__description {
     width: 453px;
     margin: 23.44px auto 89px;
@@ -78,7 +84,7 @@
     margin-top: -80px;
     margin-left: 30px;
   }
-  
+
   .features__img-wrapper {
     @include width-block(416px);
     margin-bottom: 30px;
@@ -87,11 +93,11 @@
     background-position: 33px 60px, 0 25px;
     background-size: auto, 416px 424px;
   }
-  
+
   .features__list {
     text-align: left;
   }
-  
+
   .features__item {
     padding: 0 22px 0 0;
     margin-bottom: 0;
@@ -111,7 +117,7 @@
 
       &::before {
         top: 5px;
-        left: auto; 
+        left: auto;
         right: 0;
       }
     }
@@ -129,7 +135,7 @@
       top: 591px;
       left: 567px;
     }
-    
+
     &--appearance {
       width: 145px;
       top: 549px;
@@ -138,13 +144,13 @@
 
       &::before {
         top: 5px;
-        left: auto; 
+        left: auto;
         right: 0;
       }
     }
   }
 }
- 
+
 @media (min-width: $desktop-width) {
   .features__wrapper {
     @include width-block(1200px);
@@ -156,12 +162,12 @@
     margin: 23px auto 69px;
     font-size: 16px;
   }
-  
+
   .features__img {
     margin-top: -133px;
     margin-left: 30px;
   }
-      
+
       .features__img-wrapper {
         @include width-block(640px);
           margin-bottom: 30px;
@@ -183,46 +189,46 @@
             width: 15px;
             height: 15px;
         }
-    
+
         &--cohabitation {
             width: 236px;
             top: 357px;
             left: 64px;
-    
+
           &::before {
             top: 5px;
-            left: auto; 
+            left: auto;
             right: 0;
           }
         }
-    
+
         &--instruction {
             padding-left: 34px;
             width: 160px;
             top: 472px;
             left: 899px;
-    
+
         }
-    
+
         &--weight {
             padding-left: 34px;
             width: 138px;
             top: 677px;
             left: 862px;
           }
-        
+
         &--appearance {
-              
+
             width: 176px;
             top: 647px;
             left: 105px;
-    
+
           &::before {
             top: 5px;
-            left: auto; 
+            left: auto;
             right: 0;
           }
         }
       }
-  
+
 }

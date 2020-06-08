@@ -5,24 +5,27 @@
 
 .pets__wrapper {
   @include width-block(320px);
-  padding: 60px 15px 30px;
+  padding: 52px 15px 30px;
 }
 
 .pets__title {
+  margin: 0;
   font-family: $font-secondary;
+  font-weight: normal;
   font-size: 28px;
   line-height: 1.3;
 }
 
 .pets__description {
+  margin: 22px 0 0 0;
   font-weight: 300;
   font-size: 14px;
   color: $color-secondary;
 }
 
 .pets__list {
-  margin: 40px 0;
-  padding: 0;
+  margin: 32px 0 35px;
+  padding: 0 5px;
   list-style: none;
   display: flex;
   justify-content: space-around;
@@ -35,7 +38,7 @@
   color: rgba(255, 255, 255, 0.2);
 }
 
-.pets__item-link { 
+.pets__item-link {
   &--active {
     color: $color-base;
   }
@@ -45,7 +48,7 @@
     color: $color-secondary;
     outline: none;
   }
-  
+
   &:active {
     color: $color-secondary;
     opacity: 0.6;
@@ -55,6 +58,7 @@
 .pets__photos-wrapper {
   display: flex;
   align-items: center;
+  margin-bottom: 1px;
 }
 
 .pets__button-left,
@@ -66,7 +70,7 @@
     height: 20px;
     outline: none;
   }
-  
+
   &:active {
     opacity: 0.3;
   }
@@ -101,7 +105,7 @@
 .pets__img {
     margin-top: -31px;
     margin-left: -30px;
-    border: none; 
+    border: none;
 }
 
 @media (min-width: $tablet-width) {
@@ -109,21 +113,21 @@
     @include width-block(768px);
     padding: 100px 43px 40px;
   }
-      
+
   .pets__title {
     font-size: 36px;
   }
-      
+
   .pets__description {
-    @include width-block(516px);  
+    @include width-block(516px);
     font-size: 16px;
   }
-      
+
   .pets__list {
     margin: 40px 0;
     justify-content: center;
   }
-      
+
   .pets__item {
     font-size: 18px;
 
@@ -131,12 +135,12 @@
       margin: 0 26px;
     }
   }
-      
+
   .pets__photos-wrapper {
     position: relative;
     min-height: 540px;
   }
-    
+
   .pets__button-left,
   .pets__button-right {
     width: 12px;
@@ -144,7 +148,7 @@
     left: 29px;
     top: 1151.65px;
     stroke-width: 2px;
-        
+
     &:hover,
     &:focus {
       width: 14px;
@@ -159,7 +163,7 @@
       margin-left: -2px;
     }
   }
-      
+
   .pets__button-right {
     order: 5;
     &:hover,
@@ -192,7 +196,7 @@
       order: 2;
       margin-left: 10px;
     }
-    
+
     &--3 {
       width: 470px;
       right: 18px;
@@ -210,7 +214,7 @@
     }
   }
 }
-  
+
 @media (min-width: $desktop-width) {
   .pets__wrapper {
     @include width-block(1200px);
@@ -230,7 +234,7 @@
     flex-direction: column;
     justify-content: space-between;
   }
-    
+
   .pets__button-left,
   .pets__button-right {
     display: none;
@@ -258,12 +262,12 @@
       order: 2;
       margin-top: 24px;
     }
-    
+
     &--3 {
         order: 1;
     }
   }
-      
+
   .pets__img {
     &--1 {
       margin: -50px 0 0 0;

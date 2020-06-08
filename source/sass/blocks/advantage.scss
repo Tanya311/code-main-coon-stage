@@ -6,7 +6,7 @@
 
 .advantage__wrapper {
   @include width-block(320px);
-  padding: 30px 15px 60px;
+  padding: 54px 15px 32px;
 }
 
 .advantage__title {
@@ -17,12 +17,13 @@
   font-family: $font-secondary;
   font-size: 28px;
   line-height: 32px;
+  font-weight: normal;
 }
 
 .advantage__description {
-  margin: 35px 0 30px;
+  margin: 25px 0 35px;
 
-  font-weight: 300;
+  font-weight: 200;
   font-size: 14px;
   color: $color-secondary;
 }
@@ -41,7 +42,6 @@
   width: 290px;
   height: 248px;
   margin: 0 auto 30px;
-  padding: 10px 47px 34px;
   box-sizing: border-box;
 
   font-weight: 300;
@@ -50,23 +50,27 @@
 
   background-color: $bg-primary;
   background-repeat: no-repeat;
-  background-position: 50% 40px;
   position: relative;
 
   &--veterinary {
-    padding: 10px 43px 10px;
+    padding: 10px 43px 20px;
 
     background-color: #A07B50;
     background-image: url("../img/veterinary.svg");
+    background-position: 50% 40px;
     border: 15px solid #1F1C1D;
   }
 
   &--consultation {
+    padding: 10px 47px 43px;
     background-image: url("../img/consultation.svg");
+    background-position: 50% 65px;
   }
 
   &--feed {
+    padding: 10px 47px 35px;
     background-image: url("../img/feed.svg");
+    background-position: 50% 55px;
   }
 }
 
@@ -75,7 +79,7 @@
     @include width-block(768px);
     padding: 85px 43px 101px;
   }
-  
+
   .advantage__title {
     width: auto;
     font-size: 36px;
@@ -92,26 +96,26 @@
     height: 306.77px;
     margin-bottom: 42.8px;
     padding: 10px 55px 34px;
-  
+
     font-size: 16px;
     line-height: 26px;
-  
+
     &--veterinary {
       padding: 10px 43px 10px;
       background-size: 97.79px 109.79px;
       border: 20px solid #1F1C1D;
     }
-  
+
     &--consultation {
       background-size: 107px 96.88px;
     }
-  
+
     &--feed {
       background-size: 70.15px 110.07px;
     }
   }
 }
- 
+
 @media (min-width: $desktop-width) {
   .advantage__wrapper {
     @include width-block(1200px);
@@ -123,23 +127,23 @@
     justify-content: center;
     flex-wrap: wrap;
   }
- 
+
   .advantage__item {
     height: 301px;
     margin-bottom: 10px;
     padding: 10px 55px 34px;
-    
+
     &--veterinary {
       background-size: 97.79px 107px;
     }
-  
+
     &--consultation {
       background-size: 107px 95.06px;
       margin: 0 20px;
     }
-  
+
     &--feed {
       background-size: 70.15px 108px;
     }
-  } 
+  }
 }

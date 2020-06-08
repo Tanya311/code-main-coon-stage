@@ -1,57 +1,58 @@
 .team-employee {
-  padding: 88px 11px 16px;
+  padding: 70px 0px 3px;
   background-color: $bg-primary;
   position: relative;
 }
-  
+
 .team-employee__photo {
   position: absolute;
-  top: -70px;
+  top: -65px;
   left: 50%;
   transform: translateX(-50%);
 }
-  
+
 .team-employee__name {
   margin: 0;
-  
+
   font-weight: 500;
   font-size: 18px;
   line-height: 21px;
+  font-weight: normal;
   color: $color-secondary;
 }
-  
+
 .team-employee__position {
-  margin-top: 8px;
-  margin-bottom: 25px;
-  
+  margin-top: 2px;
+  margin-bottom: 18px;
+
   font-size: 14px;
   color: $color-secondary;
 }
-  
+
 .team-employee__text {
-  margin-bottom: 30px;
-  
+  margin-bottom: 28px;
+
   font-weight: 300;
   font-size: 14px;
   color: rgba(255, 255, 255, 0.72);
 }
-  
+
 .team-employee__social {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-  
+
 .team-employee__social-link {
   display: block;
   margin-bottom: 5px;
-  
+
   &:nth-child(n+1) {
-    margin-right: 15px;
-    margin-left: 15px;
+    margin-right: 7px;
+    margin-left: 7px;
   }
 }
-  
+
 .team-employee__social-link svg {
   fill: #ffffff;
 }
@@ -61,7 +62,7 @@
     padding: 70.32px 90px 70.05px 106px;
     text-align: left;
   }
-      
+
   .team-employee__photo {
     width: 207.3px;
     height: 208.93px;
@@ -70,38 +71,38 @@
     bottom: -121px;
     right: -61.3px;
   }
-      
+
   .team-employee__name {
     font-size: 24px;
   }
-      
+
   .team-employee__position {
     margin-top: 8px;
     margin-bottom: 20px;
-      
+
     font-size: 16px;
   }
-      
+
   .team-employee__text {
     margin-bottom: 44.21px;
-      
+
     font-size: 16px;
   }
-      
+
   .team-employee__social {
     justify-content: flex-start;
   }
-      
+
   .team-employee__social-link {
     display: block;
     margin-bottom: 5px;
-      
+
     &:nth-child(n+1) {
       margin-right: 6px;
       margin-left: 6px;
     }
   }
-      
+
   .team-employee__social-link {
     &--fb svg {
       height: 14.77px;
@@ -117,7 +118,7 @@
       height: 12.23px;
       width: 21.03px;
     }
-  } 
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -127,7 +128,7 @@
     padding: 70.32px 54px 70.05px 96px;
     text-align: left;
   }
-      
+
   .team-employee__photo {
     width: 360px;
     height: 356px;
@@ -136,8 +137,8 @@
     left: -135px;
     top: -25px;
   }
- 
+
   .team-employee__text {
     margin-bottom: 44.38px;
-  }   
+  }
 }
