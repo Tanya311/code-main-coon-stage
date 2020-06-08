@@ -27,7 +27,7 @@
 
   margin-bottom: 33px;
   height: 307px;
-  background: url("./../img/ellipse.png") no-repeat, url("./../img/ellipse.svg") no-repeat;
+  background: url("../img/circle-black.png") no-repeat, url("./../img/circle-orange.svg") no-repeat;
   background-position: 20px 50px, 0px 25px;
 }
 
@@ -89,7 +89,7 @@
     @include width-block(416px);
     margin-bottom: 30px;
     height: 450px;
-    background: url("../img/ellipse@tablet.png") no-repeat, url("../img/ellipse.svg") no-repeat;
+    background: url("../img/circle-black@tablet.png") no-repeat, url("../img/circle-orange.svg") no-repeat;
     background-position: 33px 60px, 0 25px;
     background-size: auto, 416px 424px;
   }
@@ -172,7 +172,7 @@
         @include width-block(640px);
           margin-bottom: 30px;
           height: 640px;
-          background: url("../img/ellipse@tablet.png") no-repeat, url("../img/ellipse.svg") no-repeat;
+          background: url("../img/circle-black@tablet.png") no-repeat, url("../img/circle-orange.svg") no-repeat;
           background-position: 58px 62px, 0 0;
           background-size: 519px 519px, 631px 631px;
       }
