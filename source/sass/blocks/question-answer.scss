@@ -65,19 +65,22 @@
   background-color: transparent;
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  background-image: url("../img/icon-plus.svg");
+  border-left: 0.5px solid #544332;
 
   &--open {
     background-color: #A07B50;
     background-image: url("../img/icon-minus.svg");
   }
 
-  &--close {
-    background-image: url("../img/icon-plus.svg");
-    border-left: 0.5px solid #544332;
-  }
 }
 
-.question-answer__answer {
+.question-answer__button + .question-answer__answer {
+  display: none;
+}
+
+.question-answer__button--open + .question-answer__answer {
+  display: block;
   margin: 0;
   padding: 0px 9px 9px 13px;
 
@@ -87,6 +90,7 @@
   color: #DDD0C3;
   border-top: 0.5px solid #544332;
 }
+
 
 .question-answer__answer p {
   margin: 10px 0 0 0;
